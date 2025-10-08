@@ -6,7 +6,7 @@ http.createServer(function(req, res) {
   var ua = (req.headers["user-agent"] || "").toLowerCase();
   var isMobile = /\b(mobile|android|iphone|ipad|ipod|iemobile|wpdesktop)\b/.test(ua);
 
-  console.log(req);
+  console.log(req); //comment
 
   if (req.url === "/") {
     res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
