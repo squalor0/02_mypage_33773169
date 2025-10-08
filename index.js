@@ -14,19 +14,20 @@ http.createServer(function(req, res) {
     var title = isMobile ? "My Page (Mobile)" : "My Page (Desktop)";
     var heading = isMobile ? "Welcome, Mobile User!" : "Welcome, Desktop User!";
 
-    var html = `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>${title}</title>
-</head>
-<body>
-  <h1>Blake Murphy</h1>
-  <h2>${heading}</h2>
-  <p>Hello! I’m a student who enjoys web development.</p>
-  <p>Hobbies: coding, reading, parenting.</p>
-</body>
-</html>`;
+    var html = `
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <title>${title}</title>
+      </head>
+      <body>
+        <h1>Blake Murphy</h1>
+        <h2>${heading}</h2>
+        <p>Hello! I’m a student who enjoys web development.</p>
+        <p>Hobbies: coding, reading, parenting.</p>
+      </body>
+      </html>`;
 
     res.end(html);
   } else {
