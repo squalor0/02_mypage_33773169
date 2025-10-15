@@ -24,7 +24,7 @@ http.createServer(function(req, res) {
       <body>
         <h1>Blake Murphy</h1>
         <h2>${heading}</h2>
-        <p>Hello! I’m a student who enjoys web development.</p>
+        <p>Hello! I’m a student who enjoys web development, but hates front-end coding. Who cares what things look like?</p>
         <p>Hobbies: coding, reading, parenting.</p>
       </body>
       </html>`;
